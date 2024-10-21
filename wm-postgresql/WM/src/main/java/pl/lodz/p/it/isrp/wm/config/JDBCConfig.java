@@ -9,7 +9,7 @@ import jakarta.persistence.PersistenceContext;
 @DataSourceDefinition( // Pula połączeń z domyślnym poziomem izolacji transakcji ReadCommitted
         name = "java:app/jdbc/WM_DS",
         className = "org.postgresql.ds.PGSimpleDataSource",
-        serverName = "10.1.0.1",
+        serverName = "10.1.0.3",
         portNumber = 5432,
         databaseName = "WaMa",
         user = "dbadmin",
