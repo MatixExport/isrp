@@ -253,12 +253,12 @@
     </error-page>
     <data-source>
         <name>java:app/jdbc/WM_DS</name>
-        <class-name>org.postgresql.ds.PSGimpleDataSource"</class-name>
+        <class-name>org.postgresql.ds.PGSimpleDataSource"</class-name>
         <server-name>10.1.0.3</server-name>
         <port-number>5432</port-number>
         <database-name>wama</database-name>
-        <user>dbadmin</user>
-        <password>ZAQ!2wsx</password>
+        <user>${db.user}</user>
+        <password>${db.password}</password>
         <property>
           <name>create</name>
           <value>true</value>
