@@ -8,4 +8,4 @@ tar -xvzf maven.tar.gz
 rm maven.tar.gz
 
 echo "export MAVEN_HOME=/java/apache-maven-3.9.9" >> /etc/profile
-echo "PATH=\$PATH:\$MAVEN_HOME\bin" >> /etc/profile
+echo "PATH=\$PATH:\$MAVEN_HOME/bin" >> /etc/profile
