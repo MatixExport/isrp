@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <body>
+        <ui:composition template="/templates/MainTemplate.xhtml">   
+            <ui:define name="title" >#{msg['page.main.action.sign.in']}</ui:define>
+            <ui:define name="content">
+                <h:form id="LoginForm" styleClass="center_content">
+                    <h:messages styleClass="messages"/>
+                    <h:panelGrid columns="2" styleClass="table">
+                        <h:outputLabel value="#{msg['page.register.account.form.label.login']}*:" for="username" />
+                        <h:inputText id="username" value="#{authPageBean.username}" required="true" />
+                        <h:outputLabel value="#{msg['page.register.account.form.label.password']}*:" for="password" />
+                        <h:inputSecret id="password" value="#{authPageBean.password}" required="true" />
+                    </h:panelGrid>
+                    <h:commandButton  value="#{msg['signIn.action.signIn']}"  action="#{authPageBean.loginAction()}" />
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
+
+
+
