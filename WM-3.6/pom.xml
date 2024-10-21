@@ -10,13 +10,10 @@
     <packaging>war</packaging>
     
     <name>${project.artifactId}</name>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>21</maven.compiler.target>
         <maven.compiler.source>21</maven.compiler.source>
-        <db.username>${settings.servers.server.postgresDB.username}</db.username>
-        <db.password>${settings.servers.server.postgresDB.password}</db.password>
     </properties>
 
     <dependencies>
