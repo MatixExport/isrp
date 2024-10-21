@@ -10,8 +10,8 @@
       <property name="jakarta.persistence.sql-load-script-source" value="initdataDB.sql"/> 
       <property name="eclipselink.logging.level" value="FINE"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://10.1.0.3:5432/wama"/>
-      <property name="javax.persistence.jdbc.user" value="dbadmin"/>
-      <property name="javax.persistence.jdbc.password" value="ZAQ!2wsx"/>
+      <property name="javax.persistence.jdbc.user" value="${db.username}"/>
+      <property name="javax.persistence.jdbc.password" value="${db.password}"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.ds.PSGimpleDataSource"/>
     </properties>
   </persistence-unit>

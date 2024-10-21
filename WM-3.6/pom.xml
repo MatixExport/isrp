@@ -15,6 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>21</maven.compiler.target>
         <maven.compiler.source>21</maven.compiler.source>
+        <db.username>${settings.servers.server.postgresDB.username}</db.username>
+        <db.password>${settings.servers.server.postgresDB.password}</db.password>
     </properties>
 
     <dependencies>
@@ -51,5 +53,11 @@
                 <version>3.4.0</version>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 </project>
