@@ -251,5 +251,21 @@
         <exception-type>java.lang.RuntimeException</exception-type>
         <location>/faces/error/error.xhtml</location>
     </error-page>
-
+    <data-source>
+        <name>java:app/jdbc/WM_DS</name>
+        <class-name>org.postgresql.ds.PSGimpleDataSource"</class-name>
+        <server-name>10.1.0.3</server-name>
+        <port-number>5432</port-number>
+        <database-name>wama</database-name>
+        <user>dbadmin</user>
+        <password>ZAQ!2wsx</password>
+        <property>
+          <name>create</name>
+          <value>true</value>
+        </property>
+        <property>
+          <name>weblogic.TestTableName</name>
+          <value>SQL SELECT 1 FROM SYS.SYSTABLES</value>
+        </property>
+    </data-source>
 </web-app>
