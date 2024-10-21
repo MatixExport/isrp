@@ -8,4 +8,4 @@ tar -xvzf jdk.tar.gz
 rm jdk.tar.gz
 
 echo "export JAVA_HOME=/java/jdk-21.0.1" >> /etc/profile
-echo "PATH=\$PATH:\$PAYARA_HOME/bin" >> /etc/profile
+echo "PATH=\$PATH:\$JAVA_HOME/bin" >> /etc/profile
