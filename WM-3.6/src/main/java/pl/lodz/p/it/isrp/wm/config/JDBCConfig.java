@@ -6,16 +6,6 @@ import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
-@DataSourceDefinition( // Pula połączeń z domyślnym poziomem izolacji transakcji ReadCommitted
-        name = "java:app/jdbc/WM_DS",
-        className = "org.apache.derby.jdbc.ClientDataSource",
-        serverName = "localhost",
-        portNumber = 1527,
-        databaseName = "WM",
-        user = "WM",
-        password = "WMpassword",
-        isolationLevel = Connection.TRANSACTION_READ_COMMITTED)
-
 @Stateless
 public class JDBCConfig {
 
