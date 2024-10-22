@@ -1,5 +1,4 @@
-mkdir /java
-cd /java
+cd /opt
 
 curl -o payara.zip https://nexus.payara.fish/repository/payara-community/fish/payara/distributions/payara/6.2024.10/payara-6.2024.10.zip
 
@@ -8,5 +7,5 @@ unzip payara.zip
 
 rm payara.zip
 
-echo "export PAYARA_HOME=/java/payara6" >> /etc/profile
+echo "export PAYARA_HOME=/opt/payara6" >> /etc/profile
 echo "PATH=\$PATH:\$PAYARA_HOME/bin" >> /etc/profile
